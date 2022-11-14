@@ -1,2 +1,3 @@
 # bullet-journal-extension
-Google chrome extension
+Browser extension in progress
+
