@@ -44,7 +44,7 @@ To do so, run the command :
 ```bash
 npm run build
 ```
-After building the dist folder, head to this link that will you guide you [How to install the unpacked extension in your browser](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
+After building the dist folder, head to this link that will guide you [How to install the unpacked extension in your browser](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
 
 ## Contributing
 
