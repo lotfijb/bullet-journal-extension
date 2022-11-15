@@ -57,6 +57,3 @@ Please make sure to check the [Features to add](#Features) section.
 
 * [Lotfi Jebali](https://github.com/lotfijb)
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
