@@ -1,4 +1,4 @@
-# Bullet Journal
+# Bullet Journal <img src="https://img.shields.io/github/license/lotfijb/bullet-journal-extension?style=flat-square" />
 
 Note taking extension to jot down quick thoughts or to save longer notes
 
