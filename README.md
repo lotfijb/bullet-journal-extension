@@ -1,3 +1,5 @@
+<p align=center><img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat" /> <img src="https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat" /> <img src="https://img.shields.io/badge/-MUI-007FFF?logo=mui&logoColor=white&style=flat" /> </p>
+
 # Bullet Journal <img src="https://img.shields.io/github/license/lotfijb/bullet-journal-extension?style=flat-square" />
 
 Note taking extension to jot down quick thoughts or to save longer notes
@@ -9,19 +11,18 @@ This is a list of features to be added soon to this extension.
 * Adding note priority
 * Adding images to notes
 
-
 ## Installation
 
 Clone the repository to your machine using : 
 
 ```bash
-git clone (url to this repository)
+git clone https://github.com/lotfijb/bullet-journal-extension
 ```
 
 Change directory to where you cloned the repository 
 
 ```bash
-cd (folder name)
+cd bullet-journal-extension
 ```
 
 Install required dependepncies
