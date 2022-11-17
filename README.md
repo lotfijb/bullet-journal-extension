@@ -6,7 +6,9 @@ Note taking extension to jot down quick thoughts or to save longer notes
 
 # Features
 This is a list of features to be added soon to this extension.
+* Adding note title
 * Editing note
+* Adding note category
 * Regrouping notes by category
 * Adding note priority
 * Adding images to notes
