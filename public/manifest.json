@@ -1,0 +1,17 @@
+{
+  "name": "Bullet Journal",
+  "description": "Note taking extension to jot down quick thoughts or to save longer notes ",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Bullet Journal"
+  },
+  "permissions": ["storage", "unlimitedStorage"],
+  "icons": {
+    "16": "journal.png",
+    "48": "journal.png",
+    "128": "journal.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
