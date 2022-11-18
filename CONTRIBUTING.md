@@ -31,13 +31,13 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Bullet Journal Code of Conduct]([https://github.com/lotfijb/bullet-journal-extensionblob/master/CODE_OF_CONDUCT.md](https://github.com/lotfijb/bullet-journal-extension/blob/main/CODE_OF_CONDUCT.md)).
+[Bullet Journal Code of Conduct](https://github.com/lotfijb/bullet-journal-extension/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <lotfi.jbeli@etudiant-isi.utm.tn>.
 
 ## I Have a Question
 
-> If you want to ask a question, we assume that you have read the available [Documentation]([https://github.com/lotfijb/bullet-journal-extension/blob/main/README.md](https://github.com/lotfijb/bullet-journal-extension/blob/main/README.md)).
+> If you want to ask a question, we assume that you have read the available [Documentation](https://github.com/lotfijb/bullet-journal-extension/blob/main/README.md)
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/lotfijb/bullet-journal-extension/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
