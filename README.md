@@ -48,6 +48,8 @@ To do so, run the command :
 npm run build
 ```
 After building the dist folder, head to this link that will guide you [How to install the unpacked extension in your browser](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
+* Google chrome, Microsoft Edge, Opera and Opera GX are supported for now using buld method.
+* For Firefox users, Bullet Journal is being publish to the Firefox-browser add-ons.
 
 ## Contributing
 
