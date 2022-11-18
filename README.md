@@ -53,8 +53,10 @@ After building the dist folder, head to this link that will guide you [How to in
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Please read the [CONTRIBUTING.md](https://github.com/lotfijb/bullet-journal-extension/blob/main/CONTRIBUTING.md#your-first-code-contribution)
+
+## Code of Conduct
+Please read [Code of Conduct](https://github.com/lotfijb/bullet-journal-extension/blob/main/CODE_OF_CONDUCT.md)
 
 Please make sure to check the [Features to add](#Features) section.
 
