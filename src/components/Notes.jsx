@@ -33,7 +33,7 @@ const Notes = ({ addNote, noteItems, deleteNote }) => {
     });
   }
   return (
-    <div className="notes-container">
+    <div className="notes-container scrollBarOrangeTransparent thinScrollbar">
       <CreateNote add={addNote} />
       {notesElements}
       <ModalNote
