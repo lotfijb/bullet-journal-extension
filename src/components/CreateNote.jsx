@@ -3,9 +3,7 @@ import { React, useState } from "react";
 const CreateNote = (props) => {
   const [noteText, setNoteText] = useState("");
   const handleChange = (event) => {
-    if (250 - event.target.value.length >= 0) {
-      setNoteText(event.target.value);
-    }
+    setNoteText(event.target.value);
   };
   const handleSave = () => {
     if (noteText !== "") {
@@ -25,7 +23,7 @@ const CreateNote = (props) => {
         placeholder="Type a new note here .."
       ></textarea>
       <div className="footer--note">
-        <small>{250 - noteText.length} remaining..</small>
+        {/* <small>{250 - noteText.length} remaining..</small> */}
         <button className="button-11" onClick={handleSave}>
           Add note!
         </button>

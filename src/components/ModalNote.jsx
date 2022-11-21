@@ -8,10 +8,12 @@ const ModalNote = (props) => {
       <div className="modal">
         <div className="modal-content">
           <p>{props.content}</p>
-          <CloseIcon
-            onClick={props.handleClose}
-            className="close-modal-button"
-          />
+          <div>
+            <CloseIcon
+              onClick={props.handleClose}
+              className="close-modal-button"
+            />
+          </div>
         </div>
       </div>
     );

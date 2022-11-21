@@ -194,7 +194,7 @@ textarea:focus {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   overflow-y: auto;
   overflow-wrap: break-word;
@@ -202,12 +202,13 @@ textarea:focus {
   font-size: 1.2rem;
 }
 .modal-content > p {
-  margin-top: 20px;
+  margin-top: 21px;
   width: 100%;
+  text-align: left;
 }
 .close-modal-button {
   position: absolute;
-  bottom: 85%;
+  bottom: 86%;
   left: 92%;
   background-color: #f5f5f5;
   border-radius: 5px;
@@ -240,18 +241,4 @@ textarea:focus {
     transparent 75%,
     transparent
   );
-}
-
-/* Styles for the scrollbars in Firefox */
-html {
-  scrollbar-color: #f90 transparent;
-  scrollbar-width: thin;
-}
-
-.scrollBarOrangeTransparent {
-  scrollbar-color: #f90 transparent;
-}
-
-.thinScrollbar {
-  scrollbar-width: thin;
 }
