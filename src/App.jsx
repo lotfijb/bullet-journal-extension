@@ -2,8 +2,6 @@ import { React, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import Notes from "./components/Notes";
 import Header from "./components/Header";
-import ModalNote from "./components/ModalNote";
-
 const App = () => {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("bullet-journal-notes")) || []

@@ -17,14 +17,23 @@ html {
     #e2e2e2,
     #c9d6ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  scrollbar-color: #f90 transparent;
+  scrollbar-width: thin;
 }
+
+.scrollBarOrangeTransparent {
+  scrollbar-color: #f90 transparent;
+}
+
+.thinScrollbar {
+  scrollbar-width: thin;
+}
+
 body {
   width: 520px;
   height: 570px;
 }
 .body-container {
-  /* max-width: 700px;
-  max-height: 630px; */
   max-width: 1000px;
   max-height: 1000px;
   padding: 0 10px;

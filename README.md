@@ -60,7 +60,10 @@ Please make sure to check the [Features to add](#Features) section.
 ## Code of Conduct
 Please read [Code of Conduct](https://github.com/lotfijb/bullet-journal-extension/blob/main/CODE_OF_CONDUCT.md)
 
-## Authors
+## Author
 
 * [Lotfi Jebali](https://github.com/lotfijb)
+
+## Contributors
+* [Adrián Marín](https://github.com/adrianmarinwork)
 
