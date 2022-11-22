@@ -1,5 +1,4 @@
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
 const Header = ({ search }) => {
   return (
     <div className="header-container">

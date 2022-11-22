@@ -6,6 +6,7 @@ const App = () => {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("bullet-journal-notes")) || []
   );
+  console.log(notes);
   useEffect(() => {
     localStorage.setItem("bullet-journal-notes", JSON.stringify(notes));
   }, [notes]);
@@ -13,7 +14,8 @@ const App = () => {
   const addNote = (text) => {
     const newNote = {
       id: nanoid(),
-      text: text,
+      title: text.title,
+      text: text.body,
       date: date.toLocaleDateString(),
     };
     const newNotes = [newNote, ...notes];
