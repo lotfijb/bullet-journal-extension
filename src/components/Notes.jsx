@@ -9,6 +9,7 @@ const Notes = ({ addNote, noteItems, deleteNote }) => {
       <Note
         handleDelete={() => deleteNote(noteItem.id)}
         key={noteItem.id}
+        title={noteItem.title}
         text={noteItem.text}
         date={noteItem.date}
         handleShow={() => changeShow(noteItem.text)}
