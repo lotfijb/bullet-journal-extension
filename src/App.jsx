@@ -31,8 +31,10 @@ const App = () => {
       <Notes
         deleteNote={deleteNote}
         addNote={addNote}
-        noteItems={notes.filter((note) =>
-          note.text.toLowerCase().includes(searchText)
+        noteItems={notes.filter(
+          (note) =>
+            note.text.toLowerCase().includes(searchText) ||
+            note.title.toLowerCase().includes(searchText)
         )}
       />
     </div>
