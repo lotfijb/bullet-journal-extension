@@ -1,25 +1,41 @@
 import { React, useState } from "react";
 
 const CreateNote = (props) => {
-  const [noteText, setNoteText] = useState("");
+  const [noteText, setNoteText] = useState({ title: "", body: "" });
   const handleChange = (event) => {
-    setNoteText(event.target.value);
+    setNoteText((prevNoteText) => {
+      return {
+        ...prevNoteText,
+        [event.target.name]: event.target.value,
+      };
+    });
   };
   const handleSave = () => {
-    if (noteText !== "") {
+    if (noteText.body !== "" && noteText.title !== "") {
       props.add(noteText);
-      setNoteText("");
+      setNoteText({ title: "", body: "" });
     }
   };
   return (
     <div className="note new-note">
       <textarea
-        name=""
+        className="title-textarea"
+        name="title"
+        id=""
+        rows="1"
+        cols="8"
+        onChange={handleChange}
+        value={noteText.title}
+        placeholder="Type note title here .."
+      ></textarea>
+      <textarea
+        className="body-textarea"
+        name="body"
         id=""
         rows="10"
         cols="8"
         onChange={handleChange}
-        value={noteText}
+        value={noteText.body}
         placeholder="Type a new note here .."
       ></textarea>
       <div className="footer--note">

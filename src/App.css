@@ -54,9 +54,6 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 200px)); */
-  /* grid-column-gap: 10px; */
-  /* grid-row-gap: auto; */
   overflow-y: auto;
   position: relative;
 }
@@ -86,8 +83,11 @@ body {
     #f2994a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.note .note-title {
+  font-weight: 600;
+}
 .note .note-text {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
 }
 .note:hover {
   transform: scale(1.05);
@@ -98,7 +98,7 @@ body {
   justify-content: space-between;
 }
 .new-note {
-  min-height: 150px;
+  min-height: 200px;
 }
 .new-note:hover {
   transform: scale(1);
@@ -114,7 +114,12 @@ textarea {
 textarea:focus {
   outline: none;
 }
-
+.body-textarea {
+  min-height: 100px;
+}
+.title-textarea {
+  min-height: 40px;
+}
 .button-11 {
   display: flex;
   flex-direction: column;
@@ -194,7 +199,6 @@ textarea:focus {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   overflow-y: auto;
   overflow-wrap: break-word;
