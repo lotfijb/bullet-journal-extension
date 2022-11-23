@@ -6,23 +6,24 @@
   font-family: "Roboto", sans-serif;
 }
 html {
-  background: #c9d6ff; /* fallback for old browsers */
+  background: #c1b6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #e2e2e2,
-    #c9d6ff
+    #c1b6ff,
+    #c4dae9
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #e2e2e2,
-    #c9d6ff
+    #c1b6ff,
+    #c4dae9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  scrollbar-color: #f90 transparent;
+  scroll-behavior: smooth;
+  scrollbar-color: black transparent;
   scrollbar-width: thin;
 }
 
 .scrollBarOrangeTransparent {
-  scrollbar-color: #f90 transparent;
+  scrollbar-color: black transparent;
 }
 
 .thinScrollbar {
@@ -37,16 +38,16 @@ body {
   max-width: 1000px;
   max-height: 1000px;
   padding: 0 10px;
-  background: #c9d6ff; /* fallback for old browsers */
+  background: #c1b6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #e2e2e2,
-    #c9d6ff
+    #c1b6ff,
+    #c4dae9
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #e2e2e2,
-    #c9d6ff
+    #c1b6ff,
+    #c4dae9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .notes-container {
@@ -71,26 +72,21 @@ body {
   justify-content: space-between;
   border-radius: 10px;
   transition: transform 0.5s;
-  background: #f2994a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f2c94c,
-    #f2994a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f2c94c,
-    #f2994a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #f9f6ee;
+}
+.note-item {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .note .note-title {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .note .note-text {
   font-size: 0.85rem;
 }
 .note:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .footer--note {
   display: flex;
@@ -99,6 +95,7 @@ body {
 }
 .new-note {
   min-height: 200px;
+  background: none;
 }
 .new-note:hover {
   transform: scale(1);
@@ -108,11 +105,16 @@ textarea {
   padding: 5px;
   resize: none;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-height: 0; /* This fixes the problem if textarea not resizing in Firefox */
+  border-radius: 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: 0.5s;
 }
 textarea:focus {
   outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .body-textarea {
   min-height: 100px;
@@ -121,6 +123,7 @@ textarea:focus {
   min-height: 40px;
 }
 .button-11 {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,11 +132,13 @@ textarea:focus {
   color: #3d3d3d;
   background: #fff;
   border: none;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 .button-11:active {
   box-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.1),
@@ -168,7 +173,10 @@ textarea:focus {
   border: none;
   text-align: center;
   background-color: #fbfafa;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-bottom: 5px;
 }
 .form-control:focus {
   outline: none;
@@ -192,7 +200,7 @@ textarea:focus {
   position: relative;
   height: 200px;
   width: 80%;
-  background-color: #ffffff;
+  background-color: #f9f6ee;
   border-radius: 5px;
   min-height: 100px;
   text-align: center;
@@ -234,7 +242,7 @@ textarea:focus {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: #f90;
+  background-color: black;
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 25%,
