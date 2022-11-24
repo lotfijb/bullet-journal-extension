@@ -12,6 +12,7 @@ const App = () => {
   }, [notes]);
   const date = new Date();
   const addNote = (text) => {
+    // text : objecet {title:str, body:str}
     const newNote = {
       id: nanoid(),
       title: text.title,
@@ -25,12 +26,24 @@ const App = () => {
     const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
   };
+  const editNote = (text, id, title) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    const date = new Date();
+    const newNote = {
+      id: id,
+      title: title,
+      text: text,
+      date: date.toLocaleDateString(),
+    };
+    setNotes([newNote, ...newNotes]);
+  };
   const [searchText, setSearchText] = useState("");
 
   return (
     <div className="body-container">
       <Header search={setSearchText} />
       <Notes
+        editNote={editNote}
         deleteNote={deleteNote}
         addNote={addNote}
         noteItems={notes.filter(
@@ -38,6 +51,7 @@ const App = () => {
             note.text.toLowerCase().includes(searchText) ||
             note.title.toLowerCase().includes(searchText)
         )}
+        // search by note title or text in note body
       />
     </div>
   );
