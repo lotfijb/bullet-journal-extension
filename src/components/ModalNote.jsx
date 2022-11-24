@@ -1,10 +1,8 @@
 import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
 const ModalNote = (props) => {
-  if (props.show === false) {
-    return null;
-  } else {
-    return (
+  return (
+    props.show && (
       <div className="modal">
         <div className="modal-content">
           <p>{props.content}</p>
@@ -16,8 +14,8 @@ const ModalNote = (props) => {
           </div>
         </div>
       </div>
-    );
-  }
+    )
+  );
 };
 
 export default ModalNote;

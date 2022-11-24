@@ -144,13 +144,18 @@ textarea:focus {
   cursor: pointer;
 }
 .delete-icon-container {
-  transition: 0.7s;
-  border-radius: 30%;
-  background-color: rgb(255, 255, 255);
   display: flex;
   place-items: center;
 }
 .delete-icon-container:hover {
+  cursor: pointer;
+}
+.edit-icon-container {
+  display: flex;
+  place-items: center;
+  margin-left: 310px;
+}
+.edit-icon-container:hover {
   cursor: pointer;
 }
 .header-container {
@@ -185,7 +190,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 999;
+  z-index: 800;
 }
 
 .modal-content {
@@ -205,11 +210,6 @@ textarea:focus {
   white-space: pre-wrap;
   font-size: 1.2rem;
 }
-.modal-content > p {
-  margin-top: 21px;
-  width: 100%;
-  text-align: left;
-}
 .close-modal-button {
   position: absolute;
   bottom: 86%;
@@ -219,6 +219,12 @@ textarea:focus {
 }
 .close-modal-button:hover {
   cursor: pointer;
+}
+.modal-content-edit textarea {
+  margin-top: 22px;
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 3px;
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
