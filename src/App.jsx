@@ -6,7 +6,6 @@ const App = () => {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("bullet-journal-notes")) || []
   );
-  console.log(notes);
   useEffect(() => {
     localStorage.setItem("bullet-journal-notes", JSON.stringify(notes));
   }, [notes]);
