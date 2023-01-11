@@ -49,6 +49,7 @@ npm run build
 After building the dist folder, head to this link that will guide you [How to install the unpacked extension in your browser](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
 * Google chrome, Microsoft Edge, Opera and Opera GX are supported for now using build method.
 * For Firefox users, [click here to download Bullet Journal from Mozilla Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/bullet-journal/)
+* Download [dist folder here](https://drive.google.com/drive/folders/1bb5hCfqUlUV-sptiTSRD-0OkL40HaxaT?usp=sharing) and [upload it manually](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
 
 ## Contributing
 
